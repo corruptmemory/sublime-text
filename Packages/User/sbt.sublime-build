@@ -1,0 +1,8 @@
+{
+  "cmd": ["sbt -Dsbt.log.noformat=true compile"],
+  "file_regex": "^\\[error\\] ([.a-zA-Z0-9/-_]+[.]scala):([0-9]+):",
+  "selector": "source.scala",
+  "working_dir": "${project_path:${folder}}",
+  "shell": "true"
+  // "encoding": "GBK"
+}

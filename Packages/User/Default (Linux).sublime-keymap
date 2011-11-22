@@ -1,2 +1,11 @@
 [
+  { "keys": ["ctrl+x","ctrl+0"], "command": "close" },
+  { "keys": ["ctrl+x","ctrl+c"], "command": "close_window" },
+  { "keys": ["ctrl+w"], "command": "cut" },
+  { "keys": ["ctrl+x","ctrl+f"], "command": "prompt_open_file" },
+  { "keys": ["ctrl+shift+-"], "command": "undo" },
+  { "keys": ["ctrl+x","ctrl+s"], "command": "save" },
+  { "keys": ["ctrl+x","ctrl+h"], "command": "select_all" },
+  { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} }
 ]
