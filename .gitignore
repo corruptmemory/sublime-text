@@ -4,3 +4,4 @@ Settings/Session.sublime_session
 Settings/License.sublime_license
 sublime-theme.sublime-project
 sublime-theme.sublime-workspace
+*.pyc

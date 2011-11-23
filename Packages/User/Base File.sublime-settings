@@ -9,7 +9,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 10,
+	"font_size": 12,
 	"highlight_line": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
