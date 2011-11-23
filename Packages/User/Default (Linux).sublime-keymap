@@ -4,49 +4,23 @@
   { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
   { "keys": ["ctrl+x","ctrl+0"], "command": "close" },
   { "keys": ["ctrl+x","ctrl+c"], "command": "close_window" },
-  { "keys": ["ctrl+w"], "command": "cut" },
   { "keys": ["ctrl+x","ctrl+f"], "command": "prompt_open_file" },
   { "keys": ["ctrl+shift+-"], "command": "undo" },
+  { "keys": ["ctrl+shift+z"], "command": "redo" },
   { "keys": ["ctrl+x","ctrl+s"], "command": "save" },
   { "keys": ["ctrl+x","ctrl+h"], "command": "select_all" },
   { "keys": ["alt+u"], "command": "upper_case" },
   { "keys": ["alt+l"], "command": "lower_case" },
   { "keys": ["alt+c"], "command": "title_case" },
-  { "keys": ["super+c"], "command": "title_case" },
   { "keys": ["alt+o"], "command": "toggle_overwrite" },
   { "keys": ["ctrl+q"], "command": "wrap_paragraph"},
   { "keys": ["alt+q"], "command": "wrap_paragraph"},
-
-  // ----------------------------------------------------------------------
-  // Emacs Kill Ring Bindings
-  //
-  // Use these bindings with https://github.com/stiang/EmacsKillRing
-
-  { "keys": ["ctrl+w"], "command": "expand_selection", "args": {"to": "word"} },
-  { "keys": ["ctrl+k"], "command": "emacs_kill_line"},
+  { "keys": ["ctrl+w"], "command": "cut" },
+  { "keys": ["alt+w"], "command": "copy" },
   { "keys": ["ctrl+y"], "command": "paste" },
-  { "keys": ["ctrl+space"], "command": "emacs_set_mark" },
-  { "keys": ["ctrl+w"], "command": "emacs_kill_to_mark" },
-  { "keys": ["alt+w"], "command": "emacs_kill_ring_save" },
-  { "keys": ["command+w"], "command": "emacs_kill_ring_save" },
-  { "keys": ["ctrl+g"], "command": "cancel_mark" },
-
+  { "keys": ["ctrl+k"], "command": "emacs_kill_line"},
   { "keys": ["alt+s"], "command": "save" },
-
   { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":true} },
   { "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
-  { "keys": ["alt+r"], "command": "show_panel", "args": {"panel": "replace"} },
-  { "keys": ["super+r"], "command": "show_panel", "args": {"panel": "replace"} },
-
-  // ----------------------------------------------------------------------
-  // Auto-complete bindings
-
-  //{ "keys": ["alt+space"], "command": "auto_complete" },
-  { "keys": ["alt+space"], "command": "replace_completion_with_auto_complete", "context":
-    [
-      { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
-    ]
-  }
-
+  { "keys": ["alt+r"], "command": "show_panel", "args": {"panel": "replace"} }
 ]
